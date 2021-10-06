@@ -8,14 +8,14 @@ import * as _vue from 'vue';
 
 
 // componentes locales
-import ExampleComponent  	from './components/ExampleComponent.vue'
+import HomeComponent  	from './components/HomeComponent.vue'
 
 
 
 /*registro de componentes locales*/
 const app = _vue.createApp({
 	components:{
-		ExampleComponent,
+		HomeComponent,
 	}
 
 });

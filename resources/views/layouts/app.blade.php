@@ -80,16 +80,16 @@
                 @if (isset($errors) && $errors->any())
                     <div class="alert alert-danger">
                         <ul>
-                            @foreach ($erros->all() as $error)
+                            @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
                             @endforeach
                         </ul>
                     </div>
                 @endif
-                @if (sesion()->has('success'))
+                @if (session()->has('success'))
                     <div class="alert alert-success">
                         <ul>
-                            @foreach (sesion()->get('success') as $message)
+                            @foreach (session()->get('success') as $message)
                                 <li>{{ $message }}</li>
                             @endforeach
                         </ul>
