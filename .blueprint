@@ -1,0 +1,10 @@
+created:
+    - database/factories/PaymentPlatformFactory.php
+    - database/factories/CurrencyFactory.php
+    - database/migrations/2021_10_06_003610_create_payment_platforms_table.php
+    - database/migrations/2021_10_06_003611_create_currencies_table.php
+    - app/Models/PaymentPlatform.php
+    - app/Models/Currency.php
+models:
+    PaymentPlatform: { name: 'string:50', image: string, softdeletes: softDeletes }
+    Currency: { id: false, iso: 'string:3 primary', softdeletes: softDeletes }

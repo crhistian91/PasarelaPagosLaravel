@@ -1,0 +1,10 @@
+models:
+  PaymentPlatform:
+    name: string:50
+    image: string
+    softDeletes
+
+  Currency:
+    id: false
+    iso: string:3 primary
+    softDeletes
