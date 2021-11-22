@@ -28,6 +28,6 @@ Route::get('getcurrencies', [HomeController::class, 'getCurrencies']);
 
 Route::group(['prefix' => 'payments'], function(){
 	Route::post('pay', 	 	[PaymentController::class, 'pay'])->name('pay');
-	Route::get('approval', 	[PaymentController::class, 'approval']);
-	Route::get('cancelled', [PaymentController::class, 'cancelled']);
+	Route::get('approval', 	[PaymentController::class, 'approval'])->name('approval');
+	Route::get('cancelled', [PaymentController::class, 'cancelled'])->name('cancelled');
 });
